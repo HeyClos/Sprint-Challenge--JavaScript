@@ -41,7 +41,7 @@ It is a border that dictates your scope. for example: 'global {regional {local} 
 Window binding: When we havent pointed at any specific thing, we point at all of the things as one whole(aka, "the forest" as josh explained.).
 Implicit binding: Here we take our closures into consideration. If we are inside the functional scope, the "this" keyword will automatically look at out funtion and point up at it. It IMPLIES that that is what its supposed to do!
 Explicit binding: We can use call, apply or bind to help us EXPLICITLY point the "this" keyword in a certain direction
-New binding: "new" states that a new object will be constructed within its own functional scope when new is run. By using "this" within "new" you acknowledge "this" will point at that new object's function.
+New binding: "new" states that a new object will be constructed, the rules of the "new" keyword state that "this" keyword is bound to the new object being constructed
 
 5. Why do we need super() in an extended class?
 it allows us to use methods from the constructor function we extend from.
