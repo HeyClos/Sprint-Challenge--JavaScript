@@ -1,4 +1,5 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
+
 class CuboidMaker {
     constructor(attributes){
     this.newLength = attributes.length;

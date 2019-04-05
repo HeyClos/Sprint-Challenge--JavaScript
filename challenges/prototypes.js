@@ -38,28 +38,29 @@ CuboidMaker.prototype.surfaceArea = function() {
 */
 
 cuboid.prototype = Object.create(CuboidMaker.prototype);
-  function Food(name, price) {
-    cuboid.call(this, name, price);
-  }
 
 // .call
 
 
-const newObj = {
-  "name":"Ruby"
-}
+  // function Food(name, price) {
+  //   cuboid.call(this, name, price);
+  // }
 
-function introduction(length,width,height){
-  return `Hello, my name is ${this.name} and I like to program in: ${skill1},${skill2},${skill3}`;
-}
+// const newObj = {
+//   "name":"Ruby"
+// }
 
-const skills = ["4","5","5"];
+// function introduction(length,width,height){
+//   return `Hello, my name is ${this.name} and I like to program in: ${skill1},${skill2},${skill3}`;
+// }
 
-console.log(introduction.call(cuboid,...skills));
+// const skills = ["4","5","5"];
+
+// console.log(introduction.call(cuboid,...skills));
 
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-// console.log(cuboid.volume()); // 100
-// console.log(cuboid.surfaceArea()); // 130
+console.log(cuboid.volume()); // 100
+console.log(cuboid.surfaceArea()); // 130
 
 
