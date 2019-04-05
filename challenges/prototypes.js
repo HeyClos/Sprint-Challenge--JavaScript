@@ -10,7 +10,6 @@ function CuboidMaker(attributes) {
   this.newLength = attributes.length;
   this.newWidth = attributes.width;
   this.newHeight = attributes.height;
-  console.log(this);
 }
 
 /* == Step 2: Volume Method ==
@@ -38,11 +37,25 @@ CuboidMaker.prototype.surfaceArea = function() {
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
 */
 
-newObject.prototype = Object.create(CuboidMaker.prototype);
+cuboid.prototype = Object.create(CuboidMaker.prototype);
+  function Food(name, price) {
+    cuboid.call(this, name, price);
+  }
 
-newObject.prototype.play = function(){
-  return `${this.newName} plays with ${this.newToy}`;
+// .call
+
+
+const newObj = {
+  "name":"Ruby"
 }
+
+function introduction(length,width,height){
+  return `Hello, my name is ${this.name} and I like to program in: ${skill1},${skill2},${skill3}`;
+}
+
+const skills = ["4","5","5"];
+
+console.log(introduction.call(cuboid,...skills));
 
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:

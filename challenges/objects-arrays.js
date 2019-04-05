@@ -70,6 +70,7 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
+//for loops
 
 const universities = [graduates.university];
 console.log(universities)
